@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Ejercicio 1</h1>
+        <form action="">
+            <label for="">Ponga el valor de n:</label><br><br>
+            <input type="number" id="numero1" name="frame" placeholder="Ingrese numero"><br><br>
+        </form>
+        <button onclick="capturar()">Enviar</button>
+    </div>
+    <div>
+        <h1>Ejercicio 2</h1>
+        <form action="">
+            <label for="">Numero: </label><br><br>
+            <input type="number" id="numero2" name="frame" placeholder="Ingrese numero"><br><br>
+        </form>
+        <button onclick="cap()">Enviar</button>
+    </div>
+    <h1>Ejercicio 3</h1>
+    <form action="">
+        <label for="">Numero: </label><br><br>
+        <input type="number" id="numero3" name="frame" placeholder="Ingrese numero"><br><br>
+    </form>
+    <button onclick="capt()">Enviar</button>
+    <script>
+        //let res = 0
+        /*function capturar() {
+            const numero = parseInt(document.getElementById("numero1").value);
+            for (i = 1; i <= numero; i++) {
+                let frac = (1 / (i ** 2));
+                res = res + frac;
+            }
+            document.write("La sumatoria cuando n es: " + numero + " es =" + res);
+        }*/
+        /*function cap() {
+            const numero2 = parseInt(document.getElementById("numero2").value);
+            for (i = 1; i <= numero2; i++) {
+                let frac = (i ** 2) / (2 ** i);
+                res = res + frac;
+            }
+            document.write("La sumatoria cuando n es: " + numero2 + " es= " + res);
+        }*/
+        function capt() {
+            const numero3 = parseInt(document.getElementById("numero3").value);
+            for (i = 1; i <= numero3; i++) {
+                if (i == 1) {
+                    let x = numero3;
+                } else {
+                    x = x(x ** 3 + (2 * numero3)) / ((2 * (x ** 3) + numero3))
+                    let x2 = x(x ** 3 + (2 * numero3)) / ((2 * (x ** 3) + numero3))
+                    let e = (x2 + 1 - x2) / (x)
+                    if (e > 0.00001) {
+                        break
+                    }
+                }
+            }
+            document.write("La raiz cubica de: " + numero3 + " es =" + x)
+        }
+    </script>
+</body>
+
+</html>
